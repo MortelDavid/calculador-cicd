@@ -8,7 +8,7 @@ int somar(int a, int b){
 
 int main(){
   int num1 = 10;
-  int num2 = 5;
+  int num2 = 8;
   int resultado = somar(num1, num2);
   printf("A soma de %d e %d é: %d\n", num1, num2, resultado);
   return 0;
