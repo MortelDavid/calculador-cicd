@@ -1,0 +1,23 @@
+yaml
+
+name:Compilar e executar código c
+
+on:
+ push:
+   branches:  ["main"]
+
+jobs:
+  build:
+     ruins-on: ubuntu-latest
+
+     steps:
+     - name: clonar repositório
+       uses: actions/checkout@v3
+
+     - name: compilar o programa em c
+       run: gcc soma.c -o soma
+
+     - name: executar o programa
+       run: ./soma
+   
+
