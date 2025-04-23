@@ -1,6 +1,5 @@
-yaml
+name: CI para c
 
-name:Compilar e executar código c
 
 on:
  push:
@@ -8,7 +7,7 @@ on:
 
 jobs:
   build:
-     ruins-on: ubuntu-latest
+     runs-on: ubuntu-latest
 
      steps:
      - name: clonar repositório
